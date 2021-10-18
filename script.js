@@ -26,7 +26,7 @@ function listo() {
     for (let i = 0; i < horarios.length; i++) {
         horario = horarios[i];
         horario.addEventListener('change',cambiarHora)
-        //console.log(horario)
+        console.log(horario)
     }
     //butacas independiente
     butacas=document.getElementsByName('Selbutacas');
