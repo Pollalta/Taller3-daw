@@ -81,9 +81,32 @@ function Cantickets() {
     CantidadTic=tickets.value
     console.log(CantidadTic)
 }
-function guardarDatos(event) {
+function guardarDatos(event,butacaValor) {
     guardarDato=event.target;
     nombrePeli=guardarDato.id;
+    
+    console.log(butacaValor)
     console.log(nombrePeli)
     
+    class Factura{
+
+        constructor(titulo, duracion, clasificacion, asientos, horario,ticket){
+            Factura.titulo= nombrePeli;
+            Factura.duracion= cambiar2;
+            Factura.clasificacion=cambiar3;
+            Factura.asientos=cambiar4;
+            Factura.horario=cambiar5;
+            Factura.ticket=cambiar6
+        }
+        iniciar(){
+            return Factura.titulo;
+            
+        }
+    }
+    const titulo= new Factura();
+    //console.log(titulo.iniciar())
+    JSON.stringify(titulo);
+    localStorage.setItem(titulo);
+   localStorage.getItem(titulo);
+
 }
